@@ -1,6 +1,0 @@
-ifconfig eth0 up
-# Do not run tcpdump if we are in test mode
-if ! cat /proc/cmdline | grep -w test; then
-   /usr/sbin/tcpdump -s 1518 -e -t -n -U -l -w - stp | tee /hostlab/sniffer.cap | tcpdump -r - &
-fi
-
