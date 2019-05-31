@@ -8,5 +8,3 @@ brctl addif br0 eth1
 brctl addif br0 eth2
 brctl addif br0 eth3
 ifconfig br0 up
-
-
