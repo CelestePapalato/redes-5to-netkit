@@ -1,8 +1,9 @@
-ifconfig eth0 up
-ifconfig eth1 up
-ifconfig eth2 up
-ifconfig eth0 hw ether 00:00:00:00:02:01
 brctl addbr br0
-brctl addif br0 eth0
+brctl addbr br0 eth0
+brctl addbr br0 eth1
+brctl addbr br0 eth2
+ifconfg eth0 up
+ifconfg eth1 up
+ifconfg eth2 up
 brctl stp br0 on
-ifconfig br0 up
+ifconfg br0 up
