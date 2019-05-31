@@ -1,7 +1,7 @@
 brctl addbr br0
-brctl addbr br0 eth0
-brctl addbr br0 eth1
-brctl addbr br0 eth2
+brctl addif br0 eth0
+brctl addif br0 eth1
+brctl addif br0 eth2
 ifconfg eth0 up
 ifconfg eth1 up
 ifconfg eth2 up
