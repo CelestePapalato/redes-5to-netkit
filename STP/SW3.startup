@@ -1,0 +1,9 @@
+brctl addbr br0
+brctl addbr br0 eth0
+brctl addbr br0 eth1
+brctl addbr br0 eth2
+ifconfg eth0 up
+ifconfg eth1 up
+ifconfg eth2 up
+brctl stp br0 on
+ifconfg br0 up
