@@ -1,0 +1,5 @@
+ifconfig eth0 192.168.0.3 up
+vconfig add eth0 100
+ifconfig eth0.100 up
+ifconfig eth0.100 100.0.0.2 up
+
